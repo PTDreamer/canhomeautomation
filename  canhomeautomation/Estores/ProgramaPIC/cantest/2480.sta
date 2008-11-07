@@ -1,0 +1,72 @@
+
+ROM used: 4452 (27%)
+          4452 (27%) including unused fragments
+
+          3 Average locations per line
+          18 Average locations per statement
+
+RAM used: 59 (8%) at main() level
+          152 (20%) worst case
+
+Stack used: 7 worst case (out of 27 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  247   111  45  2480.c
+   33     0   0  2480.h
+  361     0   0  ..\..\..\..\Program Files\PICC\devices\18F2480.h
+  439   135  55  ..\..\..\..\Program Files\PICC\drivers\can-18xxx8.c
+  369     0   0  ..\..\..\..\Program Files\PICC\drivers\can-18xxx8.h
+----- -----
+ 1449   246 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0   1             @delay_ms1
+0    296   3   2   733  4.3  can_init
+0     48   1   0   255  2.3  can_set_baud
+0     34   0   2    76  3.1  can_set_mode
+0    304   3  14  1112  6.4  can_set_id
+0    476   5  18   706  8.4  can_get_id
+0    202   2  17  1026  7.9  can_putd
+ Inline       14  1583  7.0  can_getd
+0    852  10  21   931  7.0  canReceive
+0    498   6  28  1053  9.8  canTransmit
+0    308   3  18   895  8.5  can_push
+0     32   0   1    27  0.9  canrx0_int
+0     26   0   0   315  6.5  @const316
+0     32   0   1    27  0.9  canrx1_int
+0     26   0   0   209  5.2  @const318
+0      8   0   0    12  0.8  cantx0_int
+0      8   0   0    12  0.8  cantx1_int
+0      8   0   0    12  0.8  cantx2_int
+0     32   0   1    17  0.8  canirx_int
+0     26   0   0   436  7.9  @const323
+0     58   1   1    31  1.3  canerr_int
+0     36   0   0             @const325
+0     66   1   2   224  6.7  @PRINTF_X_9600_31766_31767
+0    710   8   3  1868  5.4  MAIN
+0     34   0   0             @const331
+0     66   1   0             @const333
+
+Program metrics:
+    Functions               22
+    Statements              246
+    Comments                458
+    Volume (V)              18683
+    Difficilty (D)          106.6
+    Effort to implement (E) 1990819
+    Time to implement (T)   30 hours, 43 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   30
+    Maintainability (MI)    132
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000E4   222  0  
+000E6-03FFE  4226  11928  
+
+
+

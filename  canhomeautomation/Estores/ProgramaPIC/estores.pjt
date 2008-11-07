@@ -1,0 +1,38 @@
+[PROJECT]
+Target=estores.hex
+Development_Mode=
+Processor_Text=PIC18F2480
+ToolSuite=CCS
+Processor=0x2480
+[estores]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=estores
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=C:\DomoticaNovo\Estores\ProgramaPIC\estores.c
+2=C:\DomoticaNovo\Estores\ProgramaPIC\console.c
+3=C:\DomoticaNovo\Estores\ProgramaPIC\max4896.c
+4=C:\Program Files\PICC\drivers\can-18xxx8.c
+5=C:\Program Files\PICC\drivers\can-18xxx8.h
+6=C:\DomoticaNovo\Estores\ProgramaPIC\configure.c
+7=C:\DomoticaNovo\Estores\ProgramaPIC\switch_decision.c
+8=C:\DomoticaNovo\Estores\ProgramaPIC\can_proc.c
+9=C:\DomoticaNovo\Estores\ProgramaPIC\estores.h
+10=C:\Program Files\PICC\devices\18F2480.h
+11=C:\Projecto_Domotica\Pic\comcanfast\mcp.c
+12=C:\DomoticaNovo\Estores\ProgramaPIC\cantest\2480.c
+13=
+14=
+[Target Data]
+OptionString=-p +FH
+FileList=C:\DomoticaNovo\Estores\ProgramaPIC\estores.c
+[Units]
+Count=1
+1=estores.c (main)

@@ -1,0 +1,79 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     MAIN.i
+00C     MAIN.c
+00D-00E atoi.s
+00D     MAIN.@SCRATCH1
+00E     @PRINTF_U_9600_31766_31767.P1
+00F     atoi.result
+00F     @PRINTF_U_9600_31766_31767.P1
+010     @DIV88.P1
+010     atoi.sign
+011     @DIV88.P1
+011     atoi.base
+012     atoi.index
+012     @DIV88.@SCRATCH1
+013     atoi.c
+014     @MUL88.P1
+014     atoi.@SCRATCH1
+015     @MUL88.P1
+015     atoi.@SCRATCH2
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+003E  @MUL88
+008A  atoi
+02BC  MAIN
+0004  @const325
+0020  @const326
+0226  @DIV88
+024E  @PRINTF_U_9600_31766_31767
+02BC  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\DomoticaNovo\Estores\ProgramaPIC\spitest\
+
+Project Files:
+    main.c
+    main.h
+    ..\..\..\..\Program Files\PICC\devices\18F2580.h
+    ..\..\..\..\Program Files\PICC\drivers\stdlib.h
+    ..\..\..\..\Program Files\PICC\drivers\stddef.h
+    ..\..\..\..\Program Files\PICC\drivers\string.h
+    ..\..\..\..\Program Files\PICC\drivers\ctype.h
+
+Units:
+    C:\DomoticaNovo\Estores\ProgramaPIC\spitest\main.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F2580
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta

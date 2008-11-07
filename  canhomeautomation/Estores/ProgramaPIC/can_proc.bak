@@ -1,0 +1,105 @@
+//TIPOS
+#define Set_Value 1
+#define Get_Value 2
+#define Value_Ans 3
+#define Ping_Request 4
+#define Ping_Ans 5
+#define Set_Configuration 6 
+#define Get_Configuration 7
+#define Configuration_Ans 8
+#define Reset 9
+#define Direct_Adress 10
+#define Indirect_adress_config 11
+#define Indirect_Set_Value 12
+#define man_val_change 13
+#define newadr 14
+#define Set_virtual_int 15
+#define Get_virtual_int 16
+#define Virtual_int_Ans 17
+#define Set_glob_adr    18
+#define Get_glob_adr    19
+#define glob_adr_ans    20
+int1 can_putd(int32 id, int * data, int len, int priority, int1 ext, int1 rtr);
+
+//set configuration
+/*
+para este device
+
+EEPROM adr funcao
+10          what_control_what[0]
+11          what_control_what[1] para cada interruptor diz quais os reles k sao controlados
+12          what_control_what[2]
+.           .
+.           .
+17          what_control_what[7]
+20          switch_modes   diz se qd se carrega no int liga ao carregar e desliga ao tirar ou se vai comutando
+*/
+
+int16 conv_adr(int adr)
+{
+   return MAKE16((adr >>5) & 0x07,(adr << 3) & 0xF8);
+}
+void proc_can(int32 id,*buffer,int len){
+int dest_sub_adr, send_adr,send_subadr, type,data0,data1;
+int tbuffer[7];
+dest_sub_adr=buffer[0];
+send_adr=buffer[1];
+send_subadr=buffer[2];
+type=buffer[3];
+data0=buffer[4];
+data1=buffer[5];
+printf("Tipo=%X Dado1=%X Dado2=%X\n\r",type,data0,data1);
+switch(type)
+{
+   case Set_Value:
+      if (data0==0) bit_clear(out_value,dest_sub_adr);
+      else bit_set(out_value,dest_sub_adr);
+   break;
+   
+   case Get_Value:
+      tbuffer[0]=send_subadr;
+      tbuffer[1]=ADRESS;
+      tbuffer[2]=dest_sub_adr;
+      tbuffer[3]=Value_Ans;
+      tbuffer[4]=bit_test(out_value,dest_sub_adr);
+      can_push(conv_adr(send_adr),tbuffer,5,0,false,false);
+   break;
+   
+   case Ping_Request:
+      tbuffer[0]=send_subadr;
+      tbuffer[1]=ADRESS;
+      tbuffer[2]=dest_sub_adr;
+      tbuffer[3]=Ping_Ans;
+      can_push(conv_adr(send_adr),tbuffer,4,0,false,false);
+   break;
+
+   case reset:
+      reset_cpu();
+   break;
+   
+   case Set_Configuration:
+      write_eeprom(data0,data1);
+   break;
+   case Get_Configuration:
+      tbuffer[0]=send_subadr;
+      tbuffer[1]=ADRESS;
+      tbuffer[2]=dest_sub_adr;
+      tbuffer[3]=Configuration_Ans;
+      tbuffer[4]=data0;
+      tbuffer[5]= read_eeprom(data0);
+      can_push(conv_adr(send_adr),tbuffer,6,0,false,false);
+   break;
+   
+   case newadr:
+      write_eeprom(EADRESS,data0);
+   break;
+}
+}
+void pong(void)
+{
+int data[4]={13,14,1};
+data[3]=++x;
+can_push(0,data,4,3,FALSE,FALSE);   
+}
+
+

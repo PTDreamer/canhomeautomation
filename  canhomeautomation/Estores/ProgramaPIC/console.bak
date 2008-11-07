@@ -1,0 +1,142 @@
+char lastcommand;
+int1 can_Pop ( int32 & rx_id, int * buffer, int & rx_len, int & rx_stat );
+int catoi(char c)
+{
+switch (c) {
+
+    case '0':return 0;
+
+           break;
+
+    case '1':return 1;
+
+           break;
+    
+    case '2':return 2;
+
+           break;
+
+    case '3':return 3;
+
+           break;
+
+    case '4':return 4;
+
+           break;
+    case '5':return 5;
+
+           break;
+    
+    case '6':return 6;
+
+           break;
+    
+    case '7':return 7;
+
+           break;
+    return 0;
+}
+}
+void printCAN()
+{
+   if(lastcommand=='a')
+   {
+      int32 prxid;
+      int prxl,prxs,x;
+      int pbuffer[8];
+      can_Pop(prxid,pbuffer,prxl,prxs);
+      printf("\n\r");
+      printf("**************\n\r");
+      printf("* CAN Message*\n\r");
+      printf("* ID    =%X  *\n\r",prxid);
+      printf("* Lenght=%X  *\n\r",prxl);
+      printf("* Stat  =%X  *\n\r",prxs);
+      for(x=0;x<prxl;++x)
+      {
+      printf("* Data[%u]=%X*\n\r",x,pbuffer[x]);
+      }
+      printf("*            *\n\r");
+      printf("**************\n\r");
+   }
+}
+void showconsole(void)
+{
+printf("\n\r");
+printf("**********************\n\r");
+printf("*                    *\n\r");
+printf("* O-Control outputs  *\n\r");
+printf("* I-View Inputs      *\n\r");
+printf("* A-Receive Can      *\n\r");
+printf("* R-Read Register    *\n\r");
+printf("* W-Write Registers  *\n\r");
+printf("*                    *\n\r");
+printf("**********************\n\r");
+}
+
+
+void showoutputs(void)
+{
+printf("\n\r");
+printf("***********************\n\r");
+printf("* 0...7-Toggle output *\n\r");
+printf("* S-Sair              *\n\r");
+printf("***********************\n\r");
+printf(" Rele 0 1 2 3 4 5 6 7\n\r");
+printf("      %u %u %u %u %u %u %u %u",bit_test(relevalue,0),bit_test(relevalue,1),bit_test(relevalue,2),bit_test(relevalue,3),bit_test(relevalue,4),bit_test(relevalue,5),bit_test(relevalue,6),bit_test(relevalue,7));
+}
+void showinputs(void)
+{
+printf("\n\r");
+printf("*****************************\n\r");
+printf("* Qualquer tecla para sair  *\n\r");
+printf("*****************************\n\r");
+printf(" Int 0 1 2 3 4 5 6 7\n\r");
+while(!Kbhit())printf("\r     %u %u %u %u %u %u %u %u",input(inte0),input(inte1),input(inte2),input(inte3),input(inte4),input(inte5),input(inte6),input(inte7));
+showconsole();
+getc();
+lastcommand='c';
+}
+
+void console(char c)
+{
+   
+   int aux;
+   int i;
+  // printf("console : %c ",c);
+   if(c=='c') 
+   {
+      showconsole();
+      lastcommand='c';
+   }
+   else if((c=='o') && (lastcommand=='c')) 
+   {
+      showoutputs();
+      lastcommand='o';
+   }
+   else if((c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7')&& (lastcommand=='o'))
+   {
+      aux=relevalue;
+      i=catoi(c);
+ //     printf(" i=%u",i);
+      if(bit_test(relevalue,i)) bit_clear(aux,i);
+      else bit_set(aux,i);
+ //     printf(" value1=%u ",aux);
+      write4896(aux);
+      printf("\r      %u %u %u %u %u %u %u %u",bit_test(relevalue,0),bit_test(relevalue,1),bit_test(relevalue,2),bit_test(relevalue,3),bit_test(relevalue,4),bit_test(relevalue,5),bit_test(relevalue,6),bit_test(relevalue,7));
+   }
+   else if((c=='s') && (lastcommand=='o'))
+   {
+      showconsole();
+      lastcommand='c';
+   }
+   else if((c=='i') && (lastcommand=='c')) 
+   {
+      showinputs();
+      lastcommand='c';
+   }
+   else if((c=='a') && (lastcommand=='c')) 
+   {
+      lastcommand='a';
+   }
+   
+}

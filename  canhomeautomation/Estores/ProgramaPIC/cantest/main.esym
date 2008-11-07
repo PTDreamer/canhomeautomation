@@ -1,0 +1,555 @@
+C L "MAIN" 0 46 1 "FUNCTION"
+D G "__PCM__" 0 50 ""4.057""
+D G "__DEVICE__" 0 50 "876"
+D G "__DATE__" 0 50 ""01-Set-08""
+D G "__TIME__" 0 50 ""02:58:36"" "Standard Header file for the PIC16F876A device ////////////////"
+d G "PIN_A0" 2 19 "40"
+d G "PIN_A1" 2 20 "41"
+d G "PIN_A2" 2 21 "42"
+d G "PIN_A3" 2 22 "43"
+d G "PIN_A4" 2 23 "44"
+d G "PIN_A5" 2 24 "45"
+d G "PIN_B0" 2 26 "48"
+d G "PIN_B1" 2 27 "49"
+d G "PIN_B2" 2 28 "50"
+d G "PIN_B3" 2 29 "51"
+d G "PIN_B4" 2 30 "52"
+d G "PIN_B5" 2 31 "53"
+d G "PIN_B6" 2 32 "54"
+d G "PIN_B7" 2 33 "55"
+d G "PIN_C0" 2 35 "56"
+d G "PIN_C1" 2 36 "57"
+d G "PIN_C2" 2 37 "58"
+d G "PIN_C3" 2 38 "59"
+d G "PIN_C4" 2 39 "60"
+d G "PIN_C5" 2 40 "61"
+d G "PIN_C6" 2 41 "62"
+d G "PIN_C7" 2 42 "63"
+d G "FALSE" 2 45 "0"
+d G "TRUE" 2 46 "1"
+d G "BYTE" 2 48 "int8"
+d G "BOOLEAN" 2 49 "int1"
+d G "getc" 2 51 "getch"
+d G "fgetc" 2 52 "getch"
+d G "getchar" 2 53 "getch"
+d G "putc" 2 54 "putchar"
+d G "fputc" 2 55 "putchar"
+d G "fgets" 2 56 "gets"
+d G "fputs" 2 57 "puts"
+d G "WDT_FROM_SLEEP" 2 62 "3"
+d G "WDT_TIMEOUT" 2 63 "11"
+d G "MCLR_FROM_SLEEP" 2 64 "19"
+d G "MCLR_FROM_RUN" 2 65 "27"
+d G "NORMAL_POWER_UP" 2 66 "25"
+d G "BROWNOUT_RESTART" 2 67 "26"
+d G "RTCC_INTERNAL" 2 75 "0"
+d G "RTCC_EXT_L_TO_H" 2 76 "32"
+d G "RTCC_EXT_H_TO_L" 2 77 "48"
+d G "RTCC_DIV_1" 2 79 "8"
+d G "RTCC_DIV_2" 2 80 "0"
+d G "RTCC_DIV_4" 2 81 "1"
+d G "RTCC_DIV_8" 2 82 "2"
+d G "RTCC_DIV_16" 2 83 "3"
+d G "RTCC_DIV_32" 2 84 "4"
+d G "RTCC_DIV_64" 2 85 "5"
+d G "RTCC_DIV_128" 2 86 "6"
+d G "RTCC_DIV_256" 2 87 "7"
+d G "RTCC_8_BIT" 2 90 "0"
+d G "WDT_18MS" 2 102 "0x8008"
+d G "WDT_36MS" 2 103 "9"
+d G "WDT_72MS" 2 104 "10"
+d G "WDT_144MS" 2 105 "11"
+d G "WDT_288MS" 2 106 "12"
+d G "WDT_576MS" 2 107 "13"
+d G "WDT_1152MS" 2 108 "14"
+d G "WDT_2304MS" 2 109 "15"
+d G "T1_DISABLED" 2 115 "0"
+d G "T1_INTERNAL" 2 116 "0x85"
+d G "T1_EXTERNAL" 2 117 "0x87"
+d G "T1_EXTERNAL_SYNC" 2 118 "0x83"
+d G "T1_CLK_OUT" 2 120 "8"
+d G "T1_DIV_BY_1" 2 122 "0"
+d G "T1_DIV_BY_2" 2 123 "0x10"
+d G "T1_DIV_BY_4" 2 124 "0x20"
+d G "T1_DIV_BY_8" 2 125 "0x30"
+d G "T2_DISABLED" 2 130 "0"
+d G "T2_DIV_BY_1" 2 131 "4"
+d G "T2_DIV_BY_4" 2 132 "5"
+d G "T2_DIV_BY_16" 2 133 "6"
+d G "CCP_OFF" 2 139 "0"
+d G "CCP_CAPTURE_FE" 2 140 "4"
+d G "CCP_CAPTURE_RE" 2 141 "5"
+d G "CCP_CAPTURE_DIV_4" 2 142 "6"
+d G "CCP_CAPTURE_DIV_16" 2 143 "7"
+d G "CCP_COMPARE_SET_ON_MATCH" 2 144 "8"
+d G "CCP_COMPARE_CLR_ON_MATCH" 2 145 "9"
+d G "CCP_COMPARE_INT" 2 146 "0xA"
+d G "CCP_COMPARE_RESET_TIMER" 2 147 "0xB"
+d G "CCP_PWM" 2 148 "0xC"
+d G "CCP_PWM_PLUS_1" 2 149 "0x1c"
+d G "CCP_PWM_PLUS_2" 2 150 "0x2c"
+d G "CCP_PWM_PLUS_3" 2 151 "0x3c"
+v G "CCP_1" 2 152 "int16"
+v G "CCP_2" 2 156 "int16"
+d G "SPI_MASTER" 2 163 "0x20"
+d G "SPI_SLAVE" 2 164 "0x24"
+d G "SPI_L_TO_H" 2 165 "0"
+d G "SPI_H_TO_L" 2 166 "0x10"
+d G "SPI_CLK_DIV_4" 2 167 "0"
+d G "SPI_CLK_DIV_16" 2 168 "1"
+d G "SPI_CLK_DIV_64" 2 169 "2"
+d G "SPI_CLK_T2" 2 170 "3"
+d G "SPI_SS_DISABLED" 2 171 "1"
+d G "SPI_SAMPLE_AT_END" 2 173 "0x8000"
+d G "SPI_XMIT_L_TO_H" 2 174 "0x4000"
+d G "UART_ADDRESS" 2 180 "2"
+d G "UART_DATA" 2 181 "4"
+d G "A0_A3_A1_A3" 2 185 "0xfff04"
+d G "A0_A3_A1_A2_OUT_ON_A4_A5" 2 186 "0xfcf03"
+d G "A0_A3_A1_A3_OUT_ON_A4_A5" 2 187 "0xbcf05"
+d G "NC_NC_NC_NC" 2 188 "0x0ff07"
+d G "A0_A3_A1_A2" 2 189 "0xfff02"
+d G "A0_A3_NC_NC_OUT_ON_A4" 2 190 "0x9ef01"
+d G "A0_VR_A1_VR" 2 191 "0x3ff06"
+d G "A3_VR_A2_VR" 2 192 "0xcff0e"
+d G "CP1_INVERT" 2 193 "0x0000010"
+d G "CP2_INVERT" 2 194 "0x0000020"
+d G "VREF_LOW" 2 202 "0xa0"
+d G "VREF_HIGH" 2 203 "0x80"
+d G "VREF_A2" 2 205 "0x40"
+d G "ADC_OFF" 2 213 "0" "ADC Off"
+d G "ADC_CLOCK_DIV_2" 2 214 "0x10000"
+d G "ADC_CLOCK_DIV_4" 2 215 "0x4000"
+d G "ADC_CLOCK_DIV_8" 2 216 "0x0040"
+d G "ADC_CLOCK_DIV_16" 2 217 "0x4040"
+d G "ADC_CLOCK_DIV_32" 2 218 "0x0080"
+d G "ADC_CLOCK_DIV_64" 2 219 "0x4080"
+d G "ADC_CLOCK_INTERNAL" 2 220 "0x00c0" "Internal 2-6us"
+d G "NO_ANALOGS" 2 223 "7" "None"
+d G "ALL_ANALOG" 2 224 "0" "A0 A1 A2 A3 A4"
+d G "AN0_AN1_AN2_AN4_VSS_VREF" 2 225 "3" "A0 A1 A2 A4 VRefh=A3"
+d G "AN0_AN1_AN3" 2 226 "4" "A0 A1 A3"
+d G "AN0_AN1_VSS_VREF" 2 227 "5" "A0 A1 VRefh=A3"
+d G "AN0_AN1_AN4_VREF_VREF" 2 228 "0x08" "A0 A1 A4 VRefh=A3 VRefl=A2"
+d G "AN0_AN1_VREF_VREF" 2 229 "0x0D" "A0 A1 VRefh=A3 VRefl=A2"
+d G "AN0" 2 230 "0x0E" "A0"
+d G "AN0_VREF_VREF" 2 231 "0x0F" "A0 VRefh=A3 VRefl=A2"
+d G "ANALOG_RA3_REF" 2 232 "0x1" "!old only provided for compatibility"
+d G "RA0_RA1_RA3_ANALOG" 2 233 "0x4" "!old only provided for compatibility"
+d G "RA0_RA1_ANALOG_RA3_REF" 2 234 "0x5" "!old only provided for compatibility"
+d G "ANALOG_RA3_RA2_REF" 2 235 "0x8" "!old only provided for compatibility"
+d G "RA0_RA1_ANALOG_RA3_RA2_REF" 2 236 "0xD" "!old only provided for compatibility"
+d G "RA0_ANALOG" 2 237 "0xE" "!old only provided for compatibility"
+d G "RA0_ANALOG_RA3_RA2_REF" 2 238 "0xF" "!old only provided for compatibility"
+d G "ADC_START_AND_READ" 2 242 "7" "This is the default if nothing is specified"
+d G "ADC_START_ONLY" 2 243 "1"
+d G "ADC_READ_ONLY" 2 244 "6"
+d G "L_TO_H" 2 256 "0x40"
+d G "H_TO_L" 2 257 "0"
+d G "GLOBAL" 2 259 "0x0BC0"
+d G "INT_RTCC" 2 260 "0x0B20"
+d G "INT_RB" 2 261 "0xFF0B08"
+d G "INT_EXT" 2 262 "0x0B10"
+d G "INT_AD" 2 263 "0x8C40"
+d G "INT_TBE" 2 264 "0x8C10"
+d G "INT_RDA" 2 265 "0x8C20"
+d G "INT_TIMER1" 2 266 "0x8C01"
+d G "INT_TIMER2" 2 267 "0x8C02"
+d G "INT_CCP1" 2 268 "0x8C04"
+d G "INT_CCP2" 2 269 "0x8D01"
+d G "INT_SSP" 2 270 "0x8C08"
+d G "INT_BUSCOL" 2 271 "0x8D08"
+d G "INT_EEPROM" 2 272 "0x8D10"
+d G "INT_TIMER0" 2 273 "0x0B20"
+d G "INT_COMP" 2 274 "0x8D40"
+D G "CAN_USE_EXTENDED_ID" 0 4 "FALSE"
+D G "__CCS_CANMCP2510_LIB_DEFINES__" 4 27 ""
+D G "CAN_DO_DEBUG" 4 30 "FALSE"
+D G "CAN_BRG_SYNCH_JUMP_WIDTH" 4 38 "0" "synchronized jump width (def: 1 x Tq)"
+D G "CAN_BRG_PRESCALAR" 4 42 "4" "baud rate generator prescalar (def: 4) ( Tq = (2 x (PRE + 1))/Fosc )"
+D G "CAN_BRG_SEG_2_PHASE_TS" 4 46 "TRUE" "phase segment 2 time select bit (def: freely programmable)"
+D G "CAN_BRG_SAM" 4 50 "0" "sample of the can bus line (def: bus line is sampled 1 times prior to sample point)"
+D G "CAN_BRG_PHASE_SEGMENT_1" 4 54 "5" "phase segment 1 (def: 6 x Tq)"
+D G "CAN_BRG_PROPAGATION_TIME" 4 58 "2" "propagation time select (def: 3 x Tq)"
+D G "CAN_BRG_WAKE_FILTER" 4 62 "FALSE" "selects can bus line filter for wake up bit"
+D G "CAN_BRG_PHASE_SEGMENT_2" 4 66 "5" "phase segment 2 time select (def: 6 x Tq)"
+D G "CAN_USE_RX_DOUBLE_BUFFER" 4 70 "TRUE" "if buffer 0 overflows, do NOT use buffer 1 to put buffer 0 data"
+D G "CAN_ENABLE_DRIVE_HIGH" 4 74 "0"
+D G "CAN_ENABLE_CAN_CAPTURE" 4 78 "0"
+D G "CANCTRL" 4 91 "0x0F" "or 1f, or 2f, or 3f ... or 7f"
+D G "CANSTAT" 4 102 "0x0E" "or 1e, or 2e ... or 7e"
+D G "EFLG" 4 115 "0x2D"
+D G "CANINTE" 4 128 "0x2B"
+D G "CANINTF" 4 141 "0x2C"
+D G "TEC" 4 145 "0x1C"
+D G "REC" 4 146 "0x1D"
+D G "CNF1" 4 153 "0x2A"
+D G "CNF2" 4 162 "0x29"
+D G "CNF3" 4 171 "0x28"
+D G "TXB0CTRL" 4 184 "0x30"
+D G "TXB1CTRL" 4 185 "0x40"
+D G "TXB2CTRL" 4 186 "0x50"
+D G "TXRTSCTRL" 4 198 "0x0D"
+D G "TXB0SIDH" 4 201 "0x31"
+D G "TXB0SIDL" 4 202 "0x32"
+D G "TXB1SIDH" 4 203 "0x41"
+D G "TXB1SIDL" 4 204 "0x42"
+D G "TXB2SIDH" 4 205 "0x51"
+D G "TXB2SIDL" 4 206 "0x52"
+D G "TXB0EIDH" 4 209 "0x33"
+D G "TXB0EIDL" 4 210 "0x34"
+D G "TXB1EIDH" 4 211 "0x43"
+D G "TXB1EIDL" 4 212 "0x44"
+D G "TXB2EIDH" 4 213 "0x53"
+D G "TXB2EIDL" 4 214 "0x54"
+D G "TXB0D0" 4 217 "0x36"
+D G "TXB0D7" 4 218 "0x3D"
+D G "TXB1D0" 4 220 "0x46"
+D G "TXB1D7" 4 221 "0x4D"
+D G "TXB2D0" 4 223 "0x56"
+D G "TXB2D7" 4 224 "0x5D"
+D G "TXB0DLC" 4 233 "0x35"
+D G "TXB1DLC" 4 234 "0x45"
+D G "TXB2DLC" 4 235 "0x55"
+D G "RXB0CTRL" 4 256 "0x60"
+D G "RXB1CTRL" 4 266 "0x70"
+D G "RXB0SIDH" 4 279 "0x61"
+D G "RXB0SIDL" 4 280 "0x62"
+D G "RXB1SIDH" 4 282 "0x71"
+D G "RXB1SIDL" 4 283 "0x72"
+D G "RXB0EID8" 4 286 "0x63"
+D G "RXB0EID0" 4 287 "0x64"
+D G "RXB1EID8" 4 289 "0x73"
+D G "RXB1EID0" 4 290 "0x74"
+D G "RXB0DLC" 4 307 "0x65"
+D G "RXB1DLC" 4 308 "0x75"
+D G "RXB0D0" 4 311 "0x66"
+D G "RXB0D7" 4 312 "0x6D"
+D G "RXB1D0" 4 314 "0x76"
+D G "RXB1D7" 4 315 "0x7D"
+D G "RXF0SIDH" 4 319 "0x00"
+D G "RXF0SIDL" 4 320 "0x01"
+D G "RXF1SIDH" 4 321 "0x04"
+D G "RXF1SIDL" 4 322 "0x05"
+D G "RXF2SIDH" 4 323 "0x08"
+D G "RXF2SIDL" 4 324 "0x09"
+D G "RXF3SIDH" 4 325 "0x10"
+D G "RXF3SIDL" 4 326 "0x11"
+D G "RXF4SIDH" 4 327 "0x14"
+D G "RXF4SIDL" 4 328 "0x15"
+D G "RXF5SIDH" 4 329 "0x18"
+D G "RXF5SIDL" 4 330 "0x19"
+D G "RXF0EIDH" 4 333 "0x02"
+D G "RXF0EIDL" 4 334 "0x03"
+D G "RXF1EIDH" 4 335 "0x06"
+D G "RXF1EIDL" 4 336 "0x07"
+D G "RXF2EIDH" 4 337 "0x0a"
+D G "RXF2EIDL" 4 338 "0x0b"
+D G "RXF3EIDH" 4 339 "0x12"
+D G "RXF3EIDL" 4 340 "0x13"
+D G "RXF4EIDH" 4 341 "0x16"
+D G "RXF4EIDL" 4 342 "0x17"
+D G "RXF5EIDH" 4 343 "0x1a"
+D G "RXF5EIDL" 4 344 "0x1b"
+D G "RXM0SIDH" 4 347 "0x20"
+D G "RXM0SIDL" 4 348 "0x21"
+D G "RXM1SIDH" 4 349 "0x24"
+D G "RXM1SIDL" 4 350 "0x25"
+D G "RXM0EIDH" 4 353 "0x22"
+D G "RXM0EIDL" 4 354 "0x23"
+D G "RXM1EIDH" 4 355 "0x26"
+D G "RXM1EIDL" 4 356 "0x27"
+D G "RX0MASK" 4 358 "RXM0EIDL" "rxm0eidl"
+D G "RX1MASK" 4 359 "RXM1EIDL" "rxm1eidl"
+D G "RX0FILTER0" 4 360 "RXF0EIDL" "rxf0eidl"
+D G "RX0FILTER1" 4 361 "RXF1EIDL" "rxf1eidl"
+D G "RX1FILTER2" 4 362 "RXF2EIDL" "rxf2eidl"
+D G "RX1FILTER3" 4 363 "RXF3EIDL" "rxf3eidl"
+D G "RX1FILTER4" 4 364 "RXF4EIDL" "rxf4eidl"
+D G "RX1FILTER5" 4 365 "RXF5EIDL" "rxf5eidl"
+D G "RXB0ID" 4 366 "RXB0EIDL" "rxb0eidl"
+D G "RXB1ID" 4 367 "RXB1EIDL" "rxb1eidl"
+D G "TXB0ID" 4 368 "TXB0EIDL" "txb0eidl"
+D G "TXB1ID" 4 369 "TXB1EIDL" "txb1eidl"
+D G "TXB2ID" 4 370 "TXB2EIDL" "tsb2eidl"
+D G "CAN_MASK_ACCEPT_ALL" 4 373 "0"
+F G "can_init" 4 387 "void()"
+F G "can_set_baud" 4 388 "void()"
+V L "mode" 4 389 "CAN_OP_MODE"
+F G "can_set_mode" 4 389 "void(CAN_OP_MODE mode)"
+V L "addr" 4 390 "int8"
+V L "id" 4 390 "int32"
+V L "ext" 4 390 "int8"
+F G "can_set_id" 4 390 "void(int8 addr,int32 id,int8 ext)"
+V L "addr" 4 391 "int8"
+V L "ext" 4 391 "int8"
+F G "can_get_id" 4 391 "int32(int8 addr,int8 ext)"
+V L "id" 4 392 "int32"
+V L "data" 4 392 "*int8"
+V L "len" 4 392 "int8"
+V L "priority" 4 392 "int8"
+V L "ext" 4 392 "int8"
+V L "rtr" 4 392 "int8"
+F G "can_putd" 4 392 "int8(int32 id,*int8 data,int8 len,int8 priority,int8 ext,int8 rtr)"
+V L "id" 4 393 "int32"
+V L "data" 4 393 "*int8"
+V L "len" 4 393 "int8"
+V L "stat" 4 393 "{int1 err_ovfl,int3 filthit,int1 buffer,int1 rtr,int1 ext,int1 inv}"
+F G "can_getd" 4 393 "int8(int32 id,*int8 data,int8 len,{int1 err_ovfl,int3 filthit,int1 buffer,int1 rtr,int1 ext,int1 inv} stat)"
+F G "mcp2510_init" 4 395 "void()"
+V L "command" 4 396 "int8"
+F G "mcp2510_command" 4 396 "void(int8 command)"
+V L "address" 4 397 "int8"
+V L "data" 4 397 "int8"
+F G "mcp2510_write" 4 397 "void(int8 address,int8 data)"
+F G "mcp2510_status" 4 398 "int8()"
+V L "address" 4 399 "int8"
+F G "mcp2510_read" 4 399 "int8(int8 address)" "IO pins connected to MCP2510"
+D G "EXT_CAN_CS" 3 63 "PIN_B1"
+D G "EXT_CAN_SI" 3 64 "PIN_C1"
+D G "EXT_CAN_SO" 3 65 "PIN_C0"
+D G "EXT_CAN_SCK" 3 66 "PIN_C3"
+D G "can_debug" 3 76 ""
+C L "mcp2510_read" 3 67 9 "FUNCTION"
+F G "can_init" 3 94 "void()"
+V L "b_rxb0ctrl" 3 95 "{int1 filhit0,int1 bukt1,int1 bukt,int1 rxrtr,int1 void4,int2 rxm,int1 void7}"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_init" 3 67 1 "FUNCTION"
+C L "can_set_baud" 3 67 6 "FUNCTION"
+F G "can_set_baud" 3 135 "void()"
+V L "new_CNF1" 3 136 "{int6 brp,int2 sjw}"
+V L "new_CNF2" 3 137 "{int3 prseg,int3 phseg1,int1 sam,int1 btlmode}"
+V L "new_CNF3" 3 138 "{int3 phseg2,int3 void543,int1 wakfil,int1 void7}"
+V L "mode" 3 157 "CAN_OP_MODE"
+F G "can_set_mode" 3 157 "void(CAN_OP_MODE mode)"
+V L "old_CANCTRL" 3 158 "{int2 clkpre,int1 clken,int1 void3,int1 abat,int3 reqop}"
+C L "can_set_id" 3 67 8 "FUNCTION"
+V L "addr" 3 186 "int8"
+V L "id" 3 186 "int32"
+V L "ext" 3 186 "int8"
+F G "can_set_id" 3 186 "void(int8 addr,int32 id,int8 ext)"
+V L "converted_id" 3 187 "int8[4]"
+V L "ptr" 3 188 "*int8"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 2 "FUNCTION"
+C L "can_set_id" 3 67 2 "FUNCTION"
+C L "can_set_id" 3 67 2 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 2 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_set_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 9 "FUNCTION"
+V L "addr" 3 253 "int8"
+V L "ext" 3 253 "int8"
+F G "can_get_id" 3 253 "int32(int8 addr,int8 ext)"
+V L "ret" 3 254 "int32"
+V L "ptr" 3 255 "*int8"
+V L "converted_id" 3 256 "int8[4]"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_get_id" 3 67 1 "FUNCTION"
+C L "can_putd" 3 67 15 "FUNCTION"
+V L "id" 3 314 "int32"
+V L "data" 3 314 "*int8"
+V L "len" 3 314 "int8"
+V L "priority" 3 314 "int8"
+V L "ext" 3 314 "int8"
+V L "rtr" 3 314 "int8"
+F G "can_putd" 3 314 "int8(int32 id,*int8 data,int8 len,int8 priority,int8 ext,int8 rtr)"
+V L "i" 3 315 "int8"
+V L "port" 3 316 "int8"
+V L "TXRXBaD0" 3 318 "int8"
+V L "TXBaCTRL" 3 319 "int8"
+V L "TXRXBaEIDL" 3 320 "int8"
+V L "TXBaDLC" 3 321 "int8"
+V L "b_TXBaCTRL" 3 323 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+V L "b_TXBaDLC" 3 324 "{int4 dlc,int1 rb0,int1 rb1,int1 rtr,int1 void7}"
+V L "b_TXB0CTRL" 3 325 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+V L "b_TXB1CTRL" 3 325 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+V L "b_TXB2CTRL" 3 325 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+C L "can_putd" 3 67 2 "FUNCTION"
+C L "can_putd" 3 67 1 "FUNCTION"
+C L "can_putd" 3 67 1 "FUNCTION"
+C L "can_putd" 3 67 1 "FUNCTION"
+C L "can_putd" 3 67 1 "FUNCTION"
+C L "can_putd" 3 67 1 "FUNCTION"
+C L "can_getd" 3 67 11 "FUNCTION"
+V L "id" 3 419 "int32"
+V L "data" 3 419 "*int8"
+V L "len" 3 419 "int8"
+V L "stat" 3 419 "{int1 err_ovfl,int3 filthit,int1 buffer,int1 rtr,int1 ext,int1 inv}"
+F G "can_getd" 3 420 "int8(int32 id,*int8 data,int8 len,{int1 err_ovfl,int3 filthit,int1 buffer,int1 rtr,int1 ext,int1 inv} stat)"
+V L "i" 3 421 "int8"
+V L "b_rxb0ctrl" 3 423 "{int1 filhit0,int1 bukt1,int1 bukt,int1 rxrtr,int1 void4,int2 rxm,int1 void7}"
+V L "b_RXB1CTRL" 3 424 "{int3 filhit0,int1 rxrtr,int1 void4,int2 rxm,int1 void7}"
+V L "b_EFLG" 3 425 "{int1 ewarn,int1 rxwar,int1 txwar,int1 rxep,int1 txep,int1 txbo,int1 rx0ovr,int1 rx1ovr}"
+V L "RXBaDLC" 3 427 "int8"
+V L "b_RXBaDLC" 3 428 "{int4 dlc,int1 rb0,int1 rb1,int1 rtr,int1 void7}"
+V L "TXRXBaSIDL" 3 430 "int8"
+V L "b_TXRXBaSIDL" 3 431 "{int3 void012,int1 ext,int1 srr,int3 void567}"
+V L "RXBaD0" 3 434 "int8"
+V L "b_CANINTF" 3 435 "{int1 rx0if,int1 rx1if,int1 tx0if,int1 tx1if,int1 tx2if,int1 errif,int1 wakif,int1 merrf}"
+C L "can_getd" 3 67 1 "FUNCTION"
+C L "can_getd" 3 67 1 "FUNCTION"
+C L "can_getd" 3 67 1 "FUNCTION"
+C L "can_kbhit" 3 67 2 "FUNCTION"
+F G "can_kbhit" 3 532 "int8()"
+V L "b_CANINTF" 3 533 "{int1 rx0if,int1 rx1if,int1 tx0if,int1 tx1if,int1 tx2if,int1 errif,int1 wakif,int1 merrf}"
+C L "can_tbe" 3 67 2 "FUNCTION"
+F G "can_tbe" 3 549 "int8()"
+V L "b_TXB0CTRL" 3 550 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+V L "b_TXB1CTRL" 3 550 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+V L "b_TXB2CTRL" 3 550 "{int2 txpri,int1 void2,int1 txreq,int1 txerr,int1 mloa,int1 abtf,int1 void7}"
+C L "can_abort" 3 67 2 "FUNCTION"
+F G "can_abort" 3 569 "void()"
+V L "b_CANCTRL" 3 570 "{int2 clkpre,int1 clken,int1 void3,int1 abat,int3 reqop}"
+C L "mcp2510_read" 3 67 3 "FUNCTION"
+V L "address" 3 594 "int8"
+F G "mcp2510_read" 3 594 "int8(int8 address)"
+V L "command" 3 595 "int8[2]"
+V L "i" 3 596 "int8"
+V L "data" 3 597 "int8"
+F G "mcp2510_status" 3 620 "int8()"
+V L "command" 3 621 "int8"
+V L "data" 3 622 "int8"
+V L "i" 3 623 "int8"
+V L "address" 3 650 "int8"
+V L "data" 3 650 "int8"
+F G "mcp2510_write" 3 650 "void(int8 address,int8 data)"
+V L "command" 3 651 "int8[3]"
+V L "i" 3 652 "int8"
+V L "command" 3 669 "int8"
+F G "mcp2510_command" 3 669 "void(int8 command)"
+V L "i" 3 670 "int8"
+F G "mcp2510_init" 3 683 "void()"
+C L "mcp2510_init" 3 67 1 "FUNCTION"
+F G "MAIN" 0 9 "void()"
+F B "reset_cpu" 0 0
+F B "abs" 1 0
+F B "sleep" 0 0
+F B "delay_cycles" 1 0
+F B "read_bank" 2 0
+F B "write_bank" 3 0
+F B "shift_left" 2 2
+F B "shift_right" 2 2
+F B "rotate_left" 2 0
+F B "rotate_right" 2 0
+F B "_mul" 2 0
+F B "strcpy" 2 0
+F B "memset" 3 0
+F B "memcpy" 3 0
+F B "isamoung" 2 0
+F B "isamong" 2 0
+F B "bit_set" 2 0
+F B "bit_clear" 2 0
+F B "bit_test" 2 0
+F B "toupper" 1 0
+F B "tolower" 1 0
+F B "swap" 1 0
+F B "printf" 1 255
+F B "fprintf" 1 255
+F B "sprintf" 1 255
+F B "make8" 2 0
+F B "make16" 2 0
+F B "make32" 1 255
+F B "label_address" 1 1
+F B "goto_address" 1 0
+F B "_va_arg" 1 0
+F B "offsetofbit" 2 2
+F B "enable_interrupts" 1 0
+F B "disable_interrupts" 1 0
+F B "interrupt_active" 1 0
+F B "clear_interrupt" 1 0
+F B "jump_to_isr" 1 0
+F B "ext_int_edge" 1 2
+F B "read_eeprom" 1 0
+F B "write_eeprom" 2 0
+F B "read_program_eeprom" 1 0
+F B "write_program_eeprom" 2 0
+F B "write_program_memory" 4 0
+F B "write_program_memory8" 4 0
+F B "read_program_memory" 4 0
+F B "read_program_memory8" 4 0
+F B "output_high" 1 0
+F B "output_low" 1 0
+F B "input" 1 0
+F B "input_state" 1 0
+F B "output_float" 1 0
+F B "output_drive" 1 0
+F B "output_bit" 1 1
+F B "output_toggle" 1 0
+F B "output_a" 1 0
+F B "output_b" 1 0
+F B "output_c" 1 0
+F B "input_a" 0 0
+F B "input_b" 0 0
+F B "input_c" 0 0
+F B "set_tris_a" 1 0
+F B "set_tris_b" 1 0
+F B "set_tris_c" 1 0
+F B "get_tris_a" 0 0
+F B "get_tris_b" 0 0
+F B "get_tris_c" 0 0
+F B "port_b_pullups" 1 0
+F B "setup_counters" 2 0
+F B "setup_wdt" 1 0
+F B "restart_cause" 0 0
+F B "restart_wdt" 0 0
+F B "get_rtcc" 0 0
+F B "set_rtcc" 1 0
+F B "get_timer0" 0 0
+F B "set_timer0" 1 0
+F B "setup_comparator" 1 0
+F B "setup_port_a" 1 0
+F B "setup_adc_ports" 1 0
+F B "setup_adc" 1 0
+F B "set_adc_channel" 1 0
+F B "read_adc" 0 1
+F B "adc_done" 0 0
+F B "setup_timer_0" 1 0
+F B "setup_timer_1" 1 0
+F B "get_timer1" 0 0
+F B "set_timer1" 1 0
+F B "setup_timer_2" 3 0
+F B "get_timer2" 0 0
+F B "set_timer2" 1 0
+F B "setup_ccp1" 1 0
+F B "set_pwm1_duty" 1 0
+F B "setup_ccp2" 1 0
+F B "set_pwm2_duty" 1 0
+F B "setup_vref" 1 0
+F B "setup_spi" 1 0
+F B "spi_read" 0 1
+F B "spi_write" 1 0
+F B "spi_data_is_in" 0 0
+F B "setup_spi2" 1 0
+F B "spi_read2" 0 1
+F B "spi_write2" 1 0
+F B "spi_data_is_in2" 0 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "putchar" 1 2
+F B "puts" 1 2
+F B "getch" 0 1
+F B "gets" 1 3
+F B "kbhit" 0 1
+F B "set_uart_speed" 1 3
+F B "setup_uart" 1 3

@@ -1,0 +1,18 @@
+ÀÄbootloader2
+   ÀÄMAIN  0/90  Ram=0
+      ÃÄ??0??
+      ÃÄreal_load_program  0/574  Ram=55
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÃÄ@@FLASHWR  0/32  Ram=0
+      ³  ÃÄ@@WRITE_PROGRAM_MEMORY  0/82  Ram=7
+      ³  ³  ÃÄ@@FLASHWR  0/32  Ram=0
+      ³  ³  ÀÄ@@FLASHWR  0/32  Ram=0
+      ³  ÃÄatoi_b16  0/98  Ram=7
+      ³  ÀÄatoi_b16  0/98  Ram=7
+      ÀÄapplication  0/4  Ram=0

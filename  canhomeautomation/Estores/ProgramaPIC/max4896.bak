@@ -1,0 +1,23 @@
+#define CS pin_c2
+#define delayMAX 300
+
+int relevalue=0;
+
+void write4896(value)
+{
+relevalue=value;
+
+output_low(CS);
+//delay_ms(delayMAX);
+//spi_write(value);
+//delay_ms(delayMAX);
+//printf("value2=%u\n",value);
+spi_write(value);
+
+//delay_ms(delayMAX);
+output_high(CS);
+
+}
+
+
+

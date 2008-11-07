@@ -1,0 +1,14 @@
+bin\Debug\EEPROM_BYTE.dll
+bin\Debug\EEPROM_BYTE.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\EEPROM_BYTE.EEPROM_BYTE.resources
+obj\Debug\EEPROM_BYTE.csproj.GenerateResource.Cache
+obj\Debug\EEPROM_BYTE.dll
+obj\Debug\EEPROM_BYTE.pdb
+bin\Release\EEPROM_BYTE.dll
+bin\Release\EEPROM_BYTE.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\EEPROM_BYTE.EEPROM_BYTE.resources
+obj\Release\EEPROM_BYTE.csproj.GenerateResource.Cache
+obj\Release\EEPROM_BYTE.dll
+obj\Release\EEPROM_BYTE.pdb

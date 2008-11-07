@@ -1,0 +1,3 @@
+>>> Warning 227 "main.c" Line 31(1,1): Feature not supported    XINST
+      Memory usage:   ROM=1%      RAM=0% - 0%
+      0 Errors,  1 Warnings.
