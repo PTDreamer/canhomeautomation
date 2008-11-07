@@ -1,0 +1,12 @@
+>>> Warning 208 "estores.c" Line 20(15,23): Function not void and does not return a value  can_push
+>>> Warning 216 "estores.c" Line 412(0,1): Interrupts disabled during call to prevent re-entrancy:  (@PRINTF_U_9600_31766_31767)
+>>> Warning 216 "estores.c" Line 412(0,1): Interrupts disabled during call to prevent re-entrancy:  (@PRINTF_X_9600_31766_31767)
+>>> Warning 216 "estores.c" Line 412(0,1): Interrupts disabled during call to prevent re-entrancy:  (can_set_id)
+>>> Warning 216 "estores.c" Line 412(0,1): Interrupts disabled during call to prevent re-entrancy:  (write4896)
+>>> Warning 216 "estores.c" Line 412(0,1): Interrupts disabled during call to prevent re-entrancy:  (canTransmit)
+>>> Warning 202 "estores.c" Line 76(6,16): Variable never used:   can_rsfull
+>>> Warning 202 "estores.c" Line 81(6,17): Variable never used:   can_tsempty
+>>> Warning 202 "estores.c" Line 276(31,34): Variable never used:   aux
+>>> Warning 202 "estores.c" Line 278(10,14): Variable never used:   au16
+      Memory usage:   ROM=99%      RAM=26% - 37%
+      0 Errors,  10 Warnings.

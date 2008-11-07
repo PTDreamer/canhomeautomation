@@ -1,0 +1,16 @@
+*** Error 51 "main.c" Line 14(1,7): A numeric expression must appear here
+*** Error 51 "main.c" Line 15(1,7): A numeric expression must appear here
+*** Error 51 "main.c" Line 16(1,7): A numeric expression must appear here
+*** Error 12 "main.c" Line 18(1,9): Undefined identifier   new_CNF1
+*** Error 12 "main.c" Line 19(1,9): Undefined identifier   new_CNF1
+*** Error 12 "main.c" Line 21(1,9): Undefined identifier   new_CNF2
+*** Error 12 "main.c" Line 22(1,9): Undefined identifier   new_CNF2
+*** Error 12 "main.c" Line 23(1,9): Undefined identifier   new_CNF2
+*** Error 12 "main.c" Line 24(1,9): Undefined identifier   new_CNF2
+*** Error 12 "main.c" Line 26(1,9): Undefined identifier   new_CNF3
+*** Error 12 "main.c" Line 27(1,9): Undefined identifier   new_CNF3
+*** Error 12 "main.c" Line 29(26,34): Undefined identifier   new_CNF1
+*** Error 12 "main.c" Line 30(26,34): Undefined identifier   new_CNF2
+*** Error 12 "main.c" Line 31(26,34): Undefined identifier   new_CNF3
+*** Error 51 "main.c" Line 40(44,45): A numeric expression must appear here
+      15 Errors,  0 Warnings.

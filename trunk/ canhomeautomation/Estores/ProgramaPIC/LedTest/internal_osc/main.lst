@@ -1,0 +1,179 @@
+CCS PCH C Compiler, Version 4.057, 10706               23-Ago-08 20:59
+
+               Filename: C:\DomoticaNovo\Estores\ProgramaPIC\LedTest\internal_osc\main.lst
+
+               ROM used: 232 bytes (1%)
+                         Largest free fragment is 32536
+               RAM used: 6 (0%) at main() level
+                         7 (0%) worst case
+               Stack:    1 locations
+
+*
+0000:  GOTO   0052
+.................... #include "C:\DomoticaNovo\Estores\ProgramaPIC\LedTest\internal_osc\main.h" 
+.................... #include <18F2580.h> 
+.................... //////// Standard Header file for the PIC18F2580 device //////////////// 
+.................... #device PIC18F2580 
+.................... #list 
+....................  
+.................... #device adc=8 
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES WDT128                	//Watch Dog Timer uses 1:128 Postscale 
+.................... #FUSES INTRC_IO              	//Internal RC Osc, no CLKOUT 
+.................... #FUSES NOPROTECT             	//Code not protected from reading 
+.................... #FUSES BROWNOUT              	//Reset when brownout detected 
+.................... #FUSES BORV21                	//Brownout reset at 2.1V 
+.................... #FUSES NOPUT                 	//No Power Up Timer 
+.................... #FUSES NOCPD                 	//No EE protection 
+.................... #FUSES STVREN                	//Stack full/underflow will cause reset 
+.................... #FUSES NODEBUG               	//No Debug mode for ICD 
+.................... #FUSES LVP                   	//Low Voltage Programming on B3(PIC16) or B5(PIC18) 
+.................... #FUSES NOWRT                 	//Program memory not write protected 
+.................... #FUSES NOWRTD                	//Data EEPROM not write protected 
+.................... #FUSES IESO                  	//Internal External Switch Over mode enabled 
+.................... #FUSES FCMEN                 	//Fail-safe clock monitor enabled 
+.................... #FUSES PBADEN                	//PORTB pins are configured as analog input channels on RESET 
+.................... #FUSES BBSIZ2K               	//2K words Boot Block size 
+.................... #FUSES NOWRTC                	//configuration not registers write protected 
+.................... #FUSES NOWRTB                	//Boot block not write protected 
+.................... #FUSES NOEBTR                	//Memory not protected from table reads 
+.................... #FUSES NOEBTRB               	//Boot block not protected from table reads 
+.................... #FUSES NOCPB                 	//No Boot Block code protection 
+.................... #FUSES LPT1OSC               	//Timer1 configured for low-power operation 
+.................... #FUSES MCLR                  	//Master Clear pin enabled 
+.................... #FUSES XINST                 	//Extended set extension and Indexed Addressing mode enabled 
+....................  
+.................... #use delay(clock=8000000) 
+002C:  CLRF   FEA
+002E:  MOVLW  07
+0030:  MOVWF  FE9
+0032:  MOVF   FEF,W
+0034:  BZ    0050
+0036:  MOVLW  02
+0038:  MOVWF  01
+003A:  CLRF   00
+003C:  DECFSZ 00,F
+003E:  BRA    003C
+0040:  DECFSZ 01,F
+0042:  BRA    003A
+0044:  MOVLW  97
+0046:  MOVWF  00
+0048:  DECFSZ 00,F
+004A:  BRA    0048
+004C:  DECFSZ FEF,F
+004E:  BRA    0036
+0050:  RETLW  00
+.................... #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8) 
+....................  
+....................  
+....................  
+....................  
+.................... void main() 
+.................... { 
+0052:  CLRF   FF8
+0054:  BCF    FD0.7
+0056:  CLRF   FEA
+0058:  CLRF   FE9
+005A:  MOVLW  72
+005C:  MOVWF  FD3
+005E:  MOVF   FD3,W
+0060:  BCF    FB8.3
+0062:  MOVLW  0C
+0064:  MOVWF  FAF
+0066:  MOVLW  A2
+0068:  MOVWF  FAC
+006A:  MOVLW  90
+006C:  MOVWF  FAB
+006E:  MOVF   FC1,W
+0070:  ANDLW  C0
+0072:  IORLW  0F
+0074:  MOVWF  FC1
+....................  
+....................    setup_adc_ports(NO_ANALOGS|VSS_VDD); 
+0076:  MOVF   FC1,W
+0078:  ANDLW  C0
+007A:  IORLW  0F
+007C:  MOVWF  FC1
+....................    setup_adc(ADC_OFF|ADC_TAD_MUL_0); 
+007E:  BCF    FC2.0
+....................    setup_spi(SPI_SS_DISABLED); 
+0080:  BCF    FC6.5
+0082:  BCF    F94.5
+0084:  BSF    F94.4
+0086:  BCF    F94.3
+0088:  MOVLW  01
+008A:  MOVWF  FC6
+008C:  MOVLW  00
+008E:  MOVWF  FC7
+....................    setup_wdt(WDT_OFF); 
+0090:  BCF    FD1.0
+....................    setup_timer_0(RTCC_INTERNAL); 
+0092:  MOVLW  80
+0094:  MOVWF  FD5
+....................    setup_timer_1(T1_DISABLED); 
+0096:  CLRF   FCD
+....................    setup_timer_2(T2_DISABLED,0,1); 
+0098:  MOVLW  00
+009A:  MOVWF  FCA
+009C:  MOVLW  00
+009E:  MOVWF  FCB
+....................    setup_timer_3(T3_DISABLED|T3_DIV_BY_1); 
+00A0:  MOVF   FB1,W
+00A2:  ANDLW  48
+00A4:  MOVWF  FB1
+....................    setup_vref(FALSE); 
+00A6:  CLRF   FB5
+.................... //Setup_Oscillator parameter not selected from Intr Oscillotar Config tab 
+.................... printf("ommnmninini..........."); 
+00A8:  CLRF   06
+00AA:  MOVF   06,W
+00AC:  RCALL  0004
+00AE:  INCF   06,F
+00B0:  MOVWF  00
+00B2:  MOVF   00,W
+00B4:  BTFSS  F9E.4
+00B6:  BRA    00B4
+00B8:  MOVWF  FAD
+00BA:  MOVLW  16
+00BC:  SUBWF  06,W
+00BE:  BNZ   00AA
+....................  while(true) 
+....................    { 
+....................    output_high(pin_c0); 
+00C0:  BCF    F94.0
+00C2:  BSF    F8B.0
+....................    delay_ms(1000); 
+00C4:  MOVLW  04
+00C6:  MOVWF  06
+00C8:  MOVLW  FA
+00CA:  MOVWF  07
+00CC:  RCALL  002C
+00CE:  DECFSZ 06,F
+00D0:  BRA    00C8
+....................    output_low(pin_c0); 
+00D2:  BCF    F94.0
+00D4:  BCF    F8B.0
+....................    delay_ms(1000); 
+00D6:  MOVLW  04
+00D8:  MOVWF  06
+00DA:  MOVLW  FA
+00DC:  MOVWF  07
+00DE:  RCALL  002C
+00E0:  DECFSZ 06,F
+00E2:  BRA    00DA
+....................    } 
+00E4:  BRA    00C0
+....................    // TODO: USER CODE!! 
+....................  
+.................... } 
+00E6:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C800   IESO FCMEN INTRC_IO
+   Word  2: 0E1F   BROWNOUT WDT128 NOWDT BORV21 NOPUT
+   Word  3: 8600   PBADEN LPT1OSC MCLR
+   Word  4: 0095   STVREN NODEBUG LVP BBSIZ2K NOXINST
+   Word  5: C00F   NOPROTECT NOCPD NOCPB
+   Word  6: E00F   NOWRT NOWRTD NOWRTC NOWRTB
+   Word  7: 400F   NOEBTR NOEBTRB

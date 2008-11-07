@@ -1,0 +1,51 @@
+
+ROM used: 884 (3%)
+          1242 (4%) including unused fragments
+
+          2 Average locations per line
+          14 Average locations per statement
+
+RAM used: 70 (5%) at main() level
+          132 (9%) worst case
+
+Stack used: 3 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   36    14  23  bootloader2.c
+   33     0   0  bootloader2.h
+  361     0   0  ..\..\..\..\Program Files\PICC\devices\18F2580.h
+  135    48  77  bootloader2_bootloader.h
+----- -----
+  565    62 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    574  32  55  2591 12.8  real_load_program
+0     32   2   0             @@FLASHWR
+0     82   5   7             @@WRITE_PROGRAM_MEMORY
+0     98   6   7   366  7.2  atoi_b16
+0      4   0   0    20  1.3  application
+0     90   5   0   277  3.2  MAIN
+
+Program metrics:
+    Functions               4
+    Statements              62
+    Comments                112
+    Volume (V)              3827
+    Difficilty (D)          25.3
+    Effort to implement (E) 96656
+    Time to implement (T)   1 hours, 29 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   14
+    Maintainability (MI)    137
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00028     0  42  
+0002A-004FE   880  358  
+00500-00506     4  4  
+00508-07FFE     0  31480  
+
+
+

@@ -1,0 +1,81 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     buffidx
+006-045 buffer
+046.0   real_load_program.do_ACKLOD
+046.1   real_load_program.done
+047     real_load_program.checksum
+048     real_load_program.line_type
+049-04A real_load_program.l_addr
+04B-04C real_load_program.h_addr
+04D-050 real_load_program.addr
+051-054 real_load_program.next_addr
+055     real_load_program.dataidx
+056     real_load_program.i
+057     real_load_program.count
+058-077 real_load_program.data
+078     @@WRITE_PROGRAM_MEMORY.P1
+078     real_load_program.@SCRATCH1
+079     real_load_program.@SCRATCH2
+07A     real_load_program.@SCRATCH3
+07B     real_load_program.@SCRATCH4
+07C     real_load_program.@SCRATCH5
+07D-07E atoi_b16.s
+07F     atoi_b16.result
+080     atoi_b16.i
+081     atoi_b16.@SCRATCH1
+082     atoi_b16.@SCRATCH2
+083     atoi_b16.@SCRATCH3
+FBE-FBF CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @@WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FF6-FF8 @@WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P3
+
+ROM Allocation:
+00FE  real_load_program
+008C  @@FLASHWR
+00AC  @@WRITE_PROGRAM_MEMORY
+002A  atoi_b16
+033C  application
+0340  MAIN
+0340  @cinit
+
+Project Directory:
+    C:\DomoticaNovo\Estores\ProgramaPIC\lixo\
+
+Project Files:
+    bootloader2.c
+    bootloader2.h
+    ..\..\..\..\Program Files\PICC\devices\18F2580.h
+    bootloader2_bootloader.h
+
+Units:
+    C:\DomoticaNovo\Estores\ProgramaPIC\lixo\bootloader2.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F2580
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      bootloader2.err
+    Ext Symbols: bootloader2.esym
+    INHX32:      bootloader2.hex
+    Symbols:     bootloader2.sym
+    List:        bootloader2.lst
+    Debug/COFF:  bootloader2.cof
+    Project:     bootloader2.PJT
+    Call Tree:   bootloader2.tre
+    Statistics:  bootloader2.sta

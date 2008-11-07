@@ -1,0 +1,28 @@
+[PROJECT]
+Target=main.hex
+Development_Mode=
+Processor_Text=PIC18F2680
+ToolSuite=CCS
+Processor=0x2680
+[main]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=main
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=C:\DomoticaNovo\Estores\ProgramaPIC\lixo\main.c
+2=
+3=main.h
+4=
+[Target Data]
+OptionString=-p +FH
+FileList=C:\DomoticaNovo\Estores\ProgramaPIC\lixo\main.c
+[Units]
+Count=1
+1=main.c (main)

@@ -1,0 +1,9 @@
+>>> Warning 208 "2480.c" Line 122(15,23): Function not void and does not return a value  can_push
+>>> Warning 227 "2480.c" Line 248(1,1): Feature not supported    XINST
+>>> Warning 216 "2480.c" Line 248(0,1): Interrupts disabled during call to prevent re-entrancy:  (can_set_id)
+>>> Warning 216 "2480.c" Line 248(0,1): Interrupts disabled during call to prevent re-entrancy:  (@PRINTF_X_9600_31766_31767)
+>>> Warning 216 "2480.c" Line 248(0,1): Interrupts disabled during call to prevent re-entrancy:  (canTransmit)
+>>> Warning 202 "2480.c" Line 10(6,16): Variable never used:   can_rsfull
+>>> Warning 202 "2480.c" Line 15(6,17): Variable never used:   can_tsempty
+      Memory usage:   ROM=27%      RAM=8% - 20%
+      0 Errors,  7 Warnings.

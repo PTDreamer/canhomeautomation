@@ -1,0 +1,19 @@
+EAGLE Version 4.16r2 Copyright (c) 1988-2006 CadSoft
+
+Electrical Rule Check for C:/DomoticaNovo/Estores/Esquemas/estores_18Fv1.sch at 28-07-2008 02:22:45 
+
+WARNING: Sheet 1/1: POWER Pin IC15 VCC connected to +5V
+WARNING: Sheet 1/1: POWER Pin IC5 VCC connected to +5V
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC1 VDD connected to +5V
+WARNING: Sheet 1/1: POWER Pin IC2 VS connected to +5V
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 FLAG
+ERROR: OUTPUT and SUPPLY Pins mixed on net GND
+WARNING: Sheet 1/1, Net N$1: missing Junction at (2.6 1.8)
+WARNING: Sheet 1/1, Net VCCIN: missing Junction at (-1.7 -4.7)
+
+Board and schematic are consistent
+
+    2 errors
+    8 warnings

@@ -1,0 +1,25 @@
+[PROJECT]
+Target=bootloader.hex
+Development_Mode=
+Processor_Text=PIC18F2580
+ToolSuite=CCS
+[bootloader]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=bootloader
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=bootloader.c
+[Opened Files]
+1=C:\DomoticaNovo\Estores\ProgramaPIC\lixo\bootloader.c
+2=C:\DomoticaNovo\Estores\ProgramaPIC\lixo\bootloader_bootloader.h
+3=C:\DomoticaNovo\Estores\ProgramaPIC\lixo\bootloader.h
+4=
