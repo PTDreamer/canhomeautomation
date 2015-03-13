@@ -1,0 +1,3 @@
+Home automation system, AKA domotics, with CAN bus, and PIC micro based nodes.
+Example of nodes are:dimming, temperature sensor, humidity sensor, shades control, etc...
+Firmware will be developed for eatch node in C, with bootloading capabilities.
